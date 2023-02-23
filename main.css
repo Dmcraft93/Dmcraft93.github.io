@@ -1,84 +1,76 @@
+
+/* - Master Styles- */
+
 * {
-    /*Global Css style*/
-
-    box-sizing: border-box;
-    /*the border feature removed the auto feauture that makes the element bigger 
-by including dimension on boarder size to the element.*/
-
-    padding: 0px;
-    /* random elements have default padding, this removes all for user to manual add */
-
+box-sizing: border-box;
 }
 
+.body{
+margin:0px;
+}
 
-ul.ContactList {
+/*  SideNote | use Grid for layouts and Flexbox for nav */
+
+.nav-container {
+    padding: 18px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+/* - Nav Styles - */
+
+.nav-wrapper {
+display: flex;
+justify-content: space-between;
+}
+
+.left-nav {
+list-style: none;
+display: flex;
+}
+
+.nav-wrapper > .left-nav li {
+display: flex;
+margin-right: 15px;
+font-size: 0.9em;
+text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+height: 22px;
+border-bottom: 1px solid transparent;
+transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+color:rgb(53, 64, 70);
+text-decoration: none;
+transition: color 0.5;
+}
+
+.nav-link-wrapper:hover{
+border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+border-bottom: 1px solid black;
+}
+
+.right-nav{
+    padding-top: 14px;
+}
+
+/* - Portfolio Styles - */
+
+
+
+
+/* - Temp Home Styles - */
+
+
+ul.contactList {
     list-style: none;
-    line-height: 2.25em;
+    line-height: 2em;
     display: inline-block;
-    /*By default when something is block it will be as wide as possible & nothing can be next to it.
-      but inline block means it can show up next to something and wont be as wide as possible.
-      (inline means it will go in the flow of text)*/
-
     text-align: left;
 }
-
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    background:#edf3f3;
-}
-
-a {
-    /* Anchor URL Style */
-    color: #44659d;
-    font-weight: medium;
-    text-decoration: none;
-}
-
-a:hover {
-    /* Anchor URL Style when hovering */
-    color: darkgray;
-}
-
-
-HTML {
-    /*document root, to ref units use "rem" or "em" . Setting base unit for size*/
-
-    font-size: 18px;
-
-}
-
-
-li {
-    position: relative;
-    padding-left: 1.75rem;
-
-}
-
-li strong {
-    font-weight: bolder;
-}
-
-li img {
-    height: 1.5rem;
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-
-}
-
-.ravingtext{
-    animation:rave 3s infinite;
-}
-
-@keyframes rave{
-    0%{color:blueviolet;}
-    20%{color:rgb(43, 171, 226);}
-    40%{color:rgb(43, 226, 64);}
-    60%{color:rgb(226, 122, 43);}
-    80%{color:rgb(24, 58, 158);}
-    100%{color:blueviolet;}
-}
-
-
