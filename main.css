@@ -11,6 +11,7 @@ html {
     font-size: 22px;
     font-family: Helvetica, Arial, sans-serif;
     background:#d1eeeb;
+    height:100%;
 
 }
 
@@ -19,7 +20,10 @@ header{
 }
 
 
-.body{
+body{
+    height:100%;
+    display:flex;
+    flex-direction:column;
 
 }
 
@@ -42,6 +46,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 flex-direction: row-reverse;
+row-gap: 0.5em;
 }
 
 .left-nav {
@@ -65,12 +70,22 @@ align-self: center;
 height: 22px;
 border-bottom: 1px solid transparent;
 transition: border-bottom 0.3s;
+
+}
+
+.nav-link-wrapper.active a {
+    color:rgb(60, 70, 76);
+}
+
+.nav-link-wrapper.active {
+pointer-events: none;
+
 }
 
 .nav-link-wrapper a {
 color:rgb(142, 153, 159);
 text-decoration: none;
-transition: color 0.3s;
+transition: color 0.4s -.1s;
 }
 
 .nav-link-wrapper:hover{
@@ -108,7 +123,7 @@ ul.tempList {
 
 a {
     color:rgb(33, 37, 40);
-    font-weight: medium;
+    font-weight:normal;
     text-decoration: none;
 }
 
@@ -116,11 +131,7 @@ a {
 /* - Footer Stuff - */
 
 footer{
-    position: fixed;
-    bottom:0;
-    width:100%;
-    left: 0;
-    right: 0;
+    margin-top: auto;
     padding-block: 15px;
     font-size: 12px;
     text-align: center;
