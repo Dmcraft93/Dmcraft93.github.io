@@ -3,14 +3,28 @@
 
 * {
 box-sizing: border-box;
+margin: 0px;
+padding: 0px;
 }
 
 html {
     font-size: 22px;
+    font-family: Helvetica, Arial, sans-serif;
+    background:#d1eeeb;
+
 }
 
+header{
+    background:#ffffff;
+}
+
+
 .body{
-margin:0px;
+
+}
+
+.brand{
+    color:rgb(60, 70, 76);
 }
 
 /*  SideNote | use Grid for layouts and Flexbox for nav */
@@ -34,37 +48,43 @@ flex-direction: row-reverse;
 list-style: none;
 flex-wrap:wrap;
 display: flex;
+
 }
+
+
 
 .nav-wrapper > .left-nav li {
 display: flex;
-margin-right: 15px;
+margin-right: 18px;
 font-size: 0.9em;
 text-transform: uppercase;
+align-self: center;
 }
 
 .nav-link-wrapper {
 height: 22px;
 border-bottom: 1px solid transparent;
-transition: border-bottom 0.5s;
+transition: border-bottom 0.3s;
 }
 
 .nav-link-wrapper a {
-color:rgb(53, 64, 70);
+color:rgb(142, 153, 159);
 text-decoration: none;
-transition: color 0.5s;
+transition: color 0.3s;
 }
 
 .nav-link-wrapper:hover{
 border-bottom: 1px solid black;
+color:rgb(60, 70, 76);
 }
 
 .nav-link-wrapper a:hover{
 border-bottom: 1px solid black;
+color:rgb(60, 70, 76);
 }
 
 .right-nav{
-    padding-top: 14px;
+    align-self: center;
 
 }
 
@@ -73,12 +93,38 @@ border-bottom: 1px solid black;
 
 
 
-/* - Temp Home Styles - */
+/* - Temp Home Content - */
 
 
-ul.contactList {
+ul.tempList {
     list-style: none;
     line-height: 2em;
     display: inline-block;
     text-align: left;
+    padding-left: 18px;
+    padding-top: 22px;
+    color:rgb(33, 37, 40);
+}
+
+a {
+    color:rgb(33, 37, 40);
+    font-weight: medium;
+    text-decoration: none;
+}
+
+
+/* - Footer Stuff - */
+
+footer{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    left: 0;
+    right: 0;
+    padding-block: 15px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 100;
+    color:rgb(142, 153, 159);
+    background-color: #ffffff;
 }
