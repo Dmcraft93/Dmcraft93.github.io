@@ -5,6 +5,10 @@
 box-sizing: border-box;
 }
 
+html {
+    font-size: 22px;
+}
+
 .body{
 margin:0px;
 }
@@ -21,11 +25,14 @@ margin:0px;
 
 .nav-wrapper {
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
+flex-direction: row-reverse;
 }
 
 .left-nav {
 list-style: none;
+flex-wrap:wrap;
 display: flex;
 }
 
@@ -45,7 +52,7 @@ transition: border-bottom 0.5s;
 .nav-link-wrapper a {
 color:rgb(53, 64, 70);
 text-decoration: none;
-transition: color 0.5;
+transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover{
@@ -58,6 +65,7 @@ border-bottom: 1px solid black;
 
 .right-nav{
     padding-top: 14px;
+
 }
 
 /* - Portfolio Styles - */
