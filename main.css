@@ -6,14 +6,8 @@
 }
 
 html{
-            background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
-
-body {
-        background-color: rgb(228, 245, 245);
-        min-height:100%;
-} 
-
 
     /* - - - - - - Small Screen Feature: Start - - - - - - */
 @media screen and (max-width: 650px){
@@ -416,12 +410,16 @@ body {
 
 /* - - - - - - - - - - - - Start Body Grid Settings */
 
+    .content-bkg {
+        background-color: rgb(228, 245, 245);
+        padding-bottom: 3em;
+    } 
+
     .page-content-base {
         display: flex;
         flex-direction: row;
         margin: 1.5em;
         margin-top: 3em;
-        margin-bottom: 4em;
         flex-wrap: wrap;
         justify-content: center;
         /* outline: 5px solid black;  */
