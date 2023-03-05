@@ -5,6 +5,10 @@
     list-style: none;
 }
 
+html{
+            background-color: rgb(255, 255, 255);
+}
+
 
     /* - - - - - - Small Screen Feature: Start - - - - - - */
 @media screen and (max-width: 650px){
@@ -134,9 +138,9 @@
     /* - - - - - - Medium Screen Feature: Start - - - - - - */
  @media screen and (min-width: 650px) and (max-width: 1000px){
 
-        html {
-            font-size: 20px;
-        }
+    html {
+        font-size: 20px;
+    }
 
         /* - - - - - - NavBar Start - - - - - - */
     .nav-container {
@@ -152,7 +156,7 @@
         display: flex;
         flex-direction: column;
         align-self: center;
-        margin-top: 1.75em;
+        margin-top: 2em;
         margin-bottom: 1.5em;
         gap:0.5em;
         align-items: center;
@@ -160,8 +164,8 @@
 
     .brand-img {
         border-radius: 50%;
-        width: 4.25em;
-        height: 4.25em;
+        width: 4.5em;
+        height: 4.5em;
         background-position:58% 50%;
         background-size: 140%;
         background-repeat: no-repeat;
@@ -175,7 +179,7 @@
     }
 
     .left-nav {
-        margin-bottom: 1.75em;
+        margin-bottom: 2em;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -184,7 +188,7 @@
     }
 
     .left-nav li {
-        font-size: 1.25em;
+        font-size: 1.5em;
         width:min-content;
     }
 
@@ -253,137 +257,155 @@
 
     /* - - - - - - Large Screen Feature: Start - - - - - - */
 @media screen and (min-width: 1000px){
-    html {
+     html {
         font-size: 20px;
     }
 
-    /* - - - - - - NavBar Start - - - - - - */
-.nav-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-}
+        /* - - - - - - NavBar Start - - - - - - */
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
 
-.nav-brand-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-top: 1.75em;
-    margin-bottom: 1.5em;
-    gap:0.5em;
-    align-items: center;
-}
+    .nav-brand-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        gap:0.5em;
+        align-items: center;
+    }
 
-.brand-img {
-    border-radius: 50%;
-    width: 4.25em;
-    height: 4.25em;
-    background-position:58% 50%;
-    background-size: 140%;
-    background-repeat: no-repeat;
-}
+    .brand-img {
+        border-radius: 50%;
+        width: 4.5em;
+        height: 4.5em;
+        background-position:58% 50%;
+        background-size: 140%;
+        background-repeat: no-repeat;
+    }
 
-.brand-name {
-    color:rgb(60, 70, 76);
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    font-size: 1.25em;
-}
+    .brand-name {
+        color:rgb(60, 70, 76);
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-size: 1.25em;
+    }
 
-.left-nav {
-    margin-bottom: 1.75em;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap:2.5em;
-    justify-content: center;
-}
+    .left-nav {
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap:2.5em;
+        justify-content: center;
+    }
 
-.left-nav li {
-    font-size: 1.25em;
-    width:min-content;
-}
+    .left-nav li {
+        font-size: 1.5em;
+        width:min-content;
+    }
 
-.left-nav a {
-    color:rgb(142, 153, 159);
-    text-decoration: none;
-}
+    .left-nav a {
+        color:rgb(142, 153, 159);
+        text-decoration: none;
+    }
 
-.nav-link {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
-}
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
+    }
 
-.nav-link.active a{
-    color:rgb(60, 70, 76);
-    border-bottom: 1px solid black;
-}
+    .nav-link.active a{
+        color:rgb(60, 70, 76);
+        border-bottom: 1px solid black;
+    }
 
-.nav-link.active {
-    pointer-events: none;
-    border-bottom: 2px solid black;
-}
+    .nav-link.active {
+        pointer-events: none;
+        border-bottom: 2px solid black;
+    }
 
-.nav-link a {
-    color:rgb(142, 153, 159);
-    text-decoration: none;
-    transition: color 0.4s -.1s;
-}
+    .nav-link a {
+        color:rgb(142, 153, 159);
+        text-decoration: none;
+        transition: color 0.4s -.1s;
+    }
 
-.nav-link:hover {
-    border-bottom: 1px solid black;
-    color:rgb(60, 70, 76);
-}
+    .nav-link:hover {
+        border-bottom: 1px solid black;
+        color:rgb(60, 70, 76);
+    }
 
-.nav-link a:hover {
-    border-bottom: 1px solid black;
-    color:rgb(60, 70, 76);
-}
+    .nav-link a:hover {
+        border-bottom: 1px solid black;
+        color:rgb(60, 70, 76);
+    }
 
-/* - - - - - - Nav Toggle Feature: Start - - - - - - */
-.nav-toggle:checked ~ li {
-    display:block;
-}
+    /* - - - - - - Nav Toggle Feature: Start - - - - - - */
+    .nav-toggle:checked ~ li {
+        display:block;
+    }
 
-.nav-toggle {
-    display: none;
-}
+    .nav-toggle {
+        display: none;
+    }
 
-.nav-toggle-label {
-    top:5.90em;
-    left:1em;
-    position:absolute; 
-}
+    .nav-toggle-label {
+        top:5.90em;
+        left:1em;
+        position:absolute; 
+    }
 
-.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
-    display:none;
-}
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display:none;
+    }
+    /* - - - - - - Nav Toggle Feature: Start - - - - - - */
+    .nav-toggle:checked ~ li {
+        display:block;
+    }
 
-/* - - - - - - Nav Toggle Feature: Start - - - - - - */
- .nav-toggle:checked ~ li {
-    display:block;
-}
+    .nav-toggle {
+        display: none;
+    }
 
-.nav-toggle {
-    display: none;
-}
+    .nav-toggle-label {
+        top:5.90em;
+        left:1em;
+        position:absolute; 
+    }
 
- .nav-toggle-label {
-    top:5.90em;
-    left:1em;
-    position:absolute; 
-}
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display:none;
+    }
 
-.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
-    display:none;
-}
+    /* - - - - - - Nav Toggle Feature: Start - - - - - - */
+    .nav-toggle:checked ~ li {
+        display:block;
+    }
 
-/* - - - - - - Nav Toggle Feature: End - - - - - - */
-    /* - - - - - - NavBar End - - - - - - */
-}
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        top:5.90em;
+        left:1em;
+        position:absolute; 
+    }
+
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display:none;
+    }
+
+    /* - - - - - - Nav Toggle Feature: End - - - - - - */
+        /* - - - - - - NavBar End - - - - - - */
+    }
     /* - - - - - - Large Screen Feature: End - - - - - - */
 
 
@@ -398,7 +420,8 @@
         display: flex;
         flex-direction: row;
         margin: 1.5em;
-        margin-top: 2em;
+        margin-top: 3em;
+        margin-bottom: 4em;
         flex-wrap: wrap;
         justify-content: center;
         /* outline: 5px solid black;  */
