@@ -5,19 +5,17 @@
     list-style: none;
 }
 
-html {
-    font-size: 18px;
-}
-body {
-    background-color: rgb(228, 245, 245)
-} 
 
-    /* - - - - - - Small Screen Feature: Start max 600px - - - - - - */
+    /* - - - - - - Small Screen Feature: Start - - - - - - */
 @media screen and (max-width: 600px){
 
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
+
+    body {
+        background-color: rgb(228, 245, 245)
+    } 
     
     /* - - - - - - NavBar Start - - - - - - */
     .nav-container {
@@ -135,8 +133,16 @@ body {
 
 
 
-    /* - - - - - - Medium Screen Feature: Start 600-1000- - - - - - */
+    /* - - - - - - Medium Screen Feature: Start - - - - - - */
  @media screen and (min-width: 600px) and (max-width: 1000px){
+
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: rgb(212, 240, 212)
+    } 
 
     /* - - - - - - NavBar Start - - - - - - */
  .nav-container {
@@ -251,8 +257,15 @@ body {
 
 
 
-    /* - - - - - - Large Screen Feature: Start 1000- - - - - - */
+    /* - - - - - - Large Screen Feature: Start - - - - - - */
 @media screen and (min-width: 1000px){
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: rgb(228, 245, 245)
+    } 
 
     /* - - - - - - NavBar Start - - - - - - */
  .nav-container {
@@ -361,147 +374,8 @@ body {
 
 /* - - - - - - Nav Toggle Feature: End - - - - - - */
     /* - - - - - - NavBar End - - - - - - */
-
-
 }
     /* - - - - - - Large Screen Feature: End - - - - - - */
-
-
-
-/* - - - - - - - - - - - - Start Body Grid Settings */
-
-.page-content-base {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-    margin: 0.75em;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* outline: 5px solid black; */
-    } 
-       
-    .segments-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 60em;
-        justify-content: center; 
-        align-self: center; 
-        /* outline: 7px solid rgb(255, 7, 7); */
-      } 
-      
-     .singular-segment-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height:17em;
-        min-width:17em;
-        border-radius: 2em;
-        outline: 3px solid rgb(210, 13, 240);
-    } 
-    
-     .segment-asset-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:.05em;
-        min-height:17em;
-        min-width:17em;
-        border-radius: 2em;
-        outline: 3px solid rgb(60, 222, 60);
-    } 
-    
-      
-    .segment-logo {
-        /* outline: 2px solid rgb(29, 134, 17); */
-        max-width: 17em;
-    }
-    
-    .segment-logo img {
-        max-width: 75%; 
-        margin-top: 30px;
-    }
-    
-
-    .segment-title {
-         color:transparent;
-         transition:transform .3s ease-out;
-    }
-        
-    .segment-asset-wrapper .segment-title {
-        /* transform: translateY(.00em); */
-        color:transparent;
-        transition:transform .3s ease-out;
-    } 
-  
-    .segment-asset-wrapper:hover .segment-title {
-        font-weight: bolder;
-        font-size: 600;
-        color:rgb(255, 255, 255);
-        transform: translateY(0px);
-        /* outline: .5px solid rgb(6, 255, 68);  */
-    } 
-    
-    .segment-asset-wrapper.overlay {
-        /* background-color: rgba(40, 38, 98, 0); */
-        transition: background-color 0.5s ease-out -0.1s;
-        border-radius: 2em;
-        /* outline: 5px solid rgb(255, 6, 251);  */
-    }
-    
-    .singular-segment-wrapper:hover .overlay {
-        background-color: rgba(38, 42, 79, 0.567);
-        /* outline: 5px solid rgb(2, 2, 2);  */
-    }
-
-
-
-    /* .segment-asset-wrapper.bkg-image img{
-        max-height: 100%;
-        max-width: 100%;
-        outline: 5px solid rgb(2, 2, 2); 
-    } */
-    
-    
-    /* - - - - - - - - - - - - - - - - - - End Body Grid Settings */
-
-    /* .segment-asset-wrapper.bkg-color-1{
-        background-color: rgb(136, 57, 61);
-    }
-
-    .segment-asset-wrapper.bkg-color-2{
-        background-color: rgb(116,116,193);
-    }
-    .segment-asset-wrapper.bkg-color-3{
-        background-color: rgb(128,199,199);
-    }
-    .segment-asset-wrapper.bkg-color-4{
-        background-color: rgb(98, 167, 112);
-    }
-    .segment-asset-wrapper.bkg-color-5{
-        background-color: rgb(177,35,41);
-    }
-    .segment-asset-wrapper.bkg-color-6{
-        background-color: rgb(230, 177, 71);
-    } */
-
-    
-
-
-
-
-
-    footer{
-        margin-top: auto;
-        padding-block: 15px;
-        font-size: 12px;
-        text-align: center;
-        font-weight: 100;
-        color:rgb(142, 153, 159);
-        background-color: #ffffff;
-    }
 
 
 
