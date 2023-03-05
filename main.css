@@ -9,6 +9,11 @@ html{
             background-color: rgb(255, 255, 255);
 }
 
+body {
+        background-color: rgb(228, 245, 245);
+        min-height:100%;
+} 
+
 
     /* - - - - - - Small Screen Feature: Start - - - - - - */
 @media screen and (max-width: 650px){
@@ -16,7 +21,7 @@ html{
     html {
         font-size: 16px;
     }
-    
+
     /* - - - - - - NavBar Start - - - - - - */
     .nav-container {
         display: flex;
@@ -261,7 +266,7 @@ html{
         font-size: 20px;
     }
 
-        /* - - - - - - NavBar Start - - - - - - */
+    /* - - - - - - NavBar Start - - - - - - */
     .nav-container {
         display: flex;
         flex-direction: column;
@@ -408,11 +413,6 @@ html{
     }
     /* - - - - - - Large Screen Feature: End - - - - - - */
 
-
-    body {
-        background-color: rgb(228, 245, 245);
-        min-height:100%;
-    } 
 
 /* - - - - - - - - - - - - Start Body Grid Settings */
 
