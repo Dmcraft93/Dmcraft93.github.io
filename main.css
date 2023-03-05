@@ -7,15 +7,11 @@
 
 
     /* - - - - - - Small Screen Feature: Start - - - - - - */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
 
     html {
         font-size: 16px;
     }
-
-    body {
-        background-color: rgb(228, 245, 245)
-    } 
     
     /* - - - - - - NavBar Start - - - - - - */
     .nav-container {
@@ -136,18 +132,133 @@
 
 
     /* - - - - - - Medium Screen Feature: Start - - - - - - */
- @media screen and (min-width: 600px) and (max-width: 1000px){
+ @media screen and (min-width: 650px) and (max-width: 1000px){
 
+        html {
+            font-size: 20px;
+        }
+
+        /* - - - - - - NavBar Start - - - - - - */
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+    .nav-brand-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-top: 1.75em;
+        margin-bottom: 1.5em;
+        gap:0.5em;
+        align-items: center;
+    }
+
+    .brand-img {
+        border-radius: 50%;
+        width: 4.25em;
+        height: 4.25em;
+        background-position:58% 50%;
+        background-size: 140%;
+        background-repeat: no-repeat;
+    }
+
+    .brand-name {
+        color:rgb(60, 70, 76);
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-size: 1.25em;
+    }
+
+    .left-nav {
+        margin-bottom: 1.75em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap:2.5em;
+        justify-content: center;
+    }
+
+    .left-nav li {
+        font-size: 1.25em;
+        width:min-content;
+    }
+
+    .left-nav a {
+        color:rgb(142, 153, 159);
+        text-decoration: none;
+    }
+
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.3s;
+    }
+
+    .nav-link.active a{
+        color:rgb(60, 70, 76);
+        border-bottom: 1px solid black;
+    }
+
+    .nav-link.active {
+        pointer-events: none;
+        border-bottom: 2px solid black;
+    }
+
+    .nav-link a {
+        color:rgb(142, 153, 159);
+        text-decoration: none;
+        transition: color 0.4s -.1s;
+    }
+
+    .nav-link:hover {
+        border-bottom: 1px solid black;
+        color:rgb(60, 70, 76);
+    }
+
+    .nav-link a:hover {
+        border-bottom: 1px solid black;
+        color:rgb(60, 70, 76);
+    }
+
+    /* - - - - - - Nav Toggle Feature: Start - - - - - - */
+    .nav-toggle:checked ~ li {
+        display:block;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle-label {
+        top:5.90em;
+        left:1em;
+        position:absolute; 
+    }
+
+    .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
+        display:none;
+    }
+
+/* - - - - - - Nav Toggle Feature: End - - - - - - */
+    /* - - - - - - NavBar End - - - - - - */
+
+ }
+    /* - - - - - - Medium Screen Feature: End - - - - - - */
+
+
+
+    /* - - - - - - Large Screen Feature: Start - - - - - - */
+@media screen and (min-width: 1000px){
     html {
         font-size: 20px;
     }
 
-    body {
-        background-color: rgb(228, 245, 245)
-    } 
-
     /* - - - - - - NavBar Start - - - - - - */
- .nav-container {
+.nav-container {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -160,16 +271,16 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 1.25em;
-    margin-bottom: 0.25em;
+    margin-top: 1.75em;
+    margin-bottom: 1.5em;
     gap:0.5em;
     align-items: center;
 }
 
 .brand-img {
     border-radius: 50%;
-    width: 3.5em;
-    height: 3.5em;
+    width: 4.25em;
+    height: 4.25em;
     background-position:58% 50%;
     background-size: 140%;
     background-repeat: no-repeat;
@@ -179,11 +290,11 @@
     color:rgb(60, 70, 76);
     margin-top: 0.5em;
     margin-bottom: 1em;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 .left-nav {
-    margin-bottom: 1em;
+    margin-bottom: 1.75em;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -192,7 +303,7 @@
 }
 
 .left-nav li {
-    font-size: 0.75em;
+    font-size: 1.25em;
     width:min-content;
 }
 
@@ -233,7 +344,7 @@
 }
 
 /* - - - - - - Nav Toggle Feature: Start - - - - - - */
- .nav-toggle:checked ~ li {
+.nav-toggle:checked ~ li {
     display:block;
 }
 
@@ -241,7 +352,7 @@
     display: none;
 }
 
- .nav-toggle-label {
+.nav-toggle-label {
     top:5.90em;
     left:1em;
     position:absolute; 
@@ -249,110 +360,6 @@
 
 .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
     display:none;
-}
-
-/* - - - - - - Nav Toggle Feature: End - - - - - - */
-    /* - - - - - - NavBar End - - - - - - */
-
- }
-    /* - - - - - - Medium Screen Feature: End - - - - - - */
-
-
-
-    /* - - - - - - Large Screen Feature: Start - - - - - - */
-@media screen and (min-width: 1000px){
-    html {
-        font-size: 20px;
-    }
-
-    body {
-        background-color: rgb(228, 245, 245)
-    } 
-
-    /* - - - - - - NavBar Start - - - - - - */
- .nav-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    font-family: Montserrat, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-}
-
-.nav-brand-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-top: 1.25em;
-    margin-bottom: 0.25em;
-    gap:0.5em;
-    align-items: center;
-}
-
-.brand-img {
-    border-radius: 50%;
-    width: 3.5em;
-    height: 3.5em;
-    background-position:58% 50%;
-    background-size: 140%;
-    background-repeat: no-repeat;
-}
-
-.brand-name {
-    color:rgb(60, 70, 76);
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    font-size: 1em;
-}
-
-.left-nav {
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap:2.5em;
-    justify-content: center;
-}
-
-.left-nav li {
-    font-size: 0.75em;
-    width:min-content;
-}
-
-.left-nav a {
-    color:rgb(142, 153, 159);
-    text-decoration: none;
-}
-
-.nav-link {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
-}
-
-.nav-link.active a{
-    color:rgb(60, 70, 76);
-    border-bottom: 1px solid black;
-}
-
-.nav-link.active {
-    pointer-events: none;
-    border-bottom: 2px solid black;
-}
-
-.nav-link a {
-    color:rgb(142, 153, 159);
-    text-decoration: none;
-    transition: color 0.4s -.1s;
-}
-
-.nav-link:hover {
-    border-bottom: 1px solid black;
-    color:rgb(60, 70, 76);
-}
-
-.nav-link a:hover {
-    border-bottom: 1px solid black;
-    color:rgb(60, 70, 76);
 }
 
 /* - - - - - - Nav Toggle Feature: Start - - - - - - */
@@ -380,6 +387,10 @@
     /* - - - - - - Large Screen Feature: End - - - - - - */
 
 
+    body {
+        background-color: rgb(228, 245, 245);
+        min-height:100%;
+    } 
 
 /* - - - - - - - - - - - - Start Body Grid Settings */
 
