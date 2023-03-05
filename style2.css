@@ -379,3 +379,124 @@
 
 
 
+/* - - - - - - - - - - - - Start Body Grid Settings */
+
+    .page-content-base {
+        display: flex;
+        flex-direction: row;
+        margin: 1.5em;
+        margin-top: 2em;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* outline: 5px solid black;  */
+    } 
+       
+    .segments-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-self: center; 
+        gap:1.25em;
+        /* controls amt of collumns to flexbox */
+        max-width: 65em;
+        /* outline: 7px solid rgb(255, 7, 7); */
+      } 
+      
+     .singular-segment-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 17.5em;
+        width: 17.5em; 
+        /* outline: 3px solid rgb(210, 13, 240);  */
+    } 
+
+
+    .bkg-img-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.95em;
+        height: 17.5em;
+        width: 17.5em;   
+        /* outline: 2px solid rgb(0, 0, 0);   */
+    }
+    
+     .segment-asset-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 2.95em;
+        justify-content: center;
+        min-height: 17.5em;
+        min-width: 17.5em;
+        gap:1.5em;
+        /* outline: 1px solid rgb(85, 240, 13); */
+    } 
+    
+    .segment-title {
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        letter-spacing: 1.2px;
+        /* outline: 2px solid rgb(29, 134, 17);  */
+    }
+      
+    .segment-logo {
+        max-width: 80%; 
+        margin-top: 1.5em;
+        align-self: center;
+        /* outline: 2px solid rgb(29, 134, 17);  */
+
+    }
+    
+    .segment-logo img {
+        max-width: 90%; 
+    }
+    
+   .segment-asset-wrapper .segment-title {
+        transform: translateY(1.5em);
+        color:transparent;
+        transition:transform .3s ease-out;
+    } 
+  
+    .segment-asset-wrapper:hover .segment-title {
+        font-weight: bolder;
+        font-size: 600;
+        color:rgb(255, 255, 255);
+        transform: translateY(0px);
+    } 
+    
+    .segment-asset-wrapper.overlay {
+        background-color: rgba(0,0,0,0);
+        transition: background-color 0.5s ease-out -0.1s;
+        border-radius: 2.95em;
+    }
+    
+    .singular-segment-wrapper:hover .overlay {
+        background-color: rgba(0,0,0,.70);
+    }
+    
+    
+    /* - - - - - - - - - - - - - - - - - - End Body Grid Settings */
+
+
+
+
+
+
+
+    footer{
+        margin-top: auto;
+        padding-block: 15px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 100;
+        color:rgb(142, 153, 159);
+        background-color: #ffffff;
+    }
+
+
+
+
